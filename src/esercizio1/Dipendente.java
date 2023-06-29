@@ -85,6 +85,7 @@ public class Dipendente {
 			System.out.println("ERRORE IL DIRIGENTE NON PUò ESSERE PROMOSSO");
 			break;
 		default:
+			System.out.println("ERRORE,IL DIPENDENTE è ASSENTE");
 			break;
 		}
 
@@ -96,6 +97,6 @@ public class Dipendente {
 	}
 
 	public static double calcolaPaga(Dipendente dipendente, double oreStraordinario) {
-		return dipendente._getStipendio() / 13 + dipendente._getImportoOrarioStraordinario() * oreStraordinario;
+		return dipendente._getStipendio() / 13 + (dipendente._getImportoOrarioStraordinario() * oreStraordinario);
 	}
 }
